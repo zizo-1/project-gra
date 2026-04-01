@@ -9161,6 +9161,57 @@ textarea.form-control {
   width: 100px; }
   .media .ftco-icon span {
     color: #ffbd39; }
+/* تنسيق قالب الفورم الأساسي */
+.contact-form {
+    background: rgba(255, 255, 255, 0.05) !important; /* شفافية خفيفة جداً */
+    backdrop-filter: blur(15px); /* تأثير الغباش الزجاجي */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار شفاف رقيق */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* ظل لإعطاء عمق */
+}
+
+/* تنسيق حقول الإدخال */
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important; /* شفافية الحقول */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important; /* لون الخط أبيض */
+    border-radius: 5px;
+}
+
+/* لون النص التوضيحي (Placeholder) */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* عند الضغط على الحقل */
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: #ffffff !important;
+    box-shadow: none;
+    color: #fff !important;
+}
+
+/* رسائل الخطأ */
+.error-msg {
+    color: #ff5e5e;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* زر الإرسال */
+.btn-primary {
+    background: #ffffff !important; /* زر أبيض ليبرز فوق الأسود */
+    border-color: #ffffff !important;
+    color: #000000 !important; /* نص أسود داخل الزر */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.8) !important;
+    transform: translateY(-2px);
+}
 
 #map {
   width: 100%; }
